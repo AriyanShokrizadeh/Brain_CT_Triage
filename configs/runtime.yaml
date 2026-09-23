@@ -1,0 +1,10 @@
+seed: 2026
+
+deterministic: true
+benchmark: false
+
+logging:
+  level: INFO
+  rotation: "50 MB"
+  backtrace: false
+  diagnose: false
