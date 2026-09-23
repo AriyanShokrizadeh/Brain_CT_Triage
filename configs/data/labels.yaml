@@ -1,0 +1,35 @@
+metadata:
+  series_id: series_id
+  slice_id: slice_id
+  relative_path: relative_path
+  triage_class: triage_class
+
+  spacing:
+    - pixel_spacing_y
+    - pixel_spacing_x
+    - slice_thickness
+
+  hemorrhage_columns:
+    - IntraventricularHemorrhage
+    - IntraparenchymalHemorrhage
+    - SubduralHemorrhage
+    - EpiduralHemorrhage
+    - SubarachnoidHemorrhage
+
+  fracture_prob: fracture_prob
+  MLS_mm: MLS_mm
+
+keys:
+  image: image
+  annotations: annotations
+
+  hemorrhage_mask: hemorrhage
+  hemorrhage_labels: hemorrhage_labels
+  keypoint_heatmap: heatmap
+
+  box: box
+  label: label
+  target: target
+
+  fracture_prob: fracture_prob
+  MLS_mm: MLS_mm
