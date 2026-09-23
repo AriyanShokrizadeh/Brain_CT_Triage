@@ -1,0 +1,6 @@
+# Development / visualization
+
+pytest>=8,<9
+jupyterlab>=4,<5
+matplotlib>=3.9,<4
+seaborn>=0.13,<1
