@@ -1,0 +1,14 @@
+dicom:
+  image_size: [512, 512]
+  ct_windows:
+    brain: { lower: -20, upper: 100 }
+    blood: { lower: 0, upper: 80 }
+    bone: { lower: 300, upper: 2000 }
+
+cross_validation:
+  group_column: patient_id
+  stratify_column: triage_class
+  n_splits: 5
+
+processing:
+  ingestion_workers: 10
