@@ -1,0 +1,33 @@
+# Core
+numpy>=2,<2.3.0
+scipy<1.16
+
+# Data / metadata
+pandas>=2.3.3,<3.0.0
+scikit-learn>=1.8.0,<2.0.0
+pydantic>=2.12.5,<3.0.0
+pyyaml>=6.0.3,<7.0.0
+omegaconf>=2.3.0,<3.0.0
+
+# DICOM / medical imaging
+pydicom>=3.0.1,<4.0.0
+pylibjpeg>=2.1.0,<3.0.0
+pylibjpeg-libjpeg>=2.4.0,<3.0.0
+pylibjpeg-openjpeg>=2.5.0,<3.0.0
+pylibjpeg-rle>=2.2.0,<3.0.0
+python-gdcm>=3.2.6,<4.0.0
+monai[clearml,einops,fire,segment-anything,tifffile]>=1.5.1,<2.0.0
+
+# Deep learning / vision
+torch>=2.10.0,<3.0.0
+lightning>2.2.1,<=2.4.0
+torchmetrics[detection]>=1.8.2,<2.0.0
+timm>=1.0.22,<2.0.0
+transformers>=4.57.0,<4.58.0
+
+# CLI / utilities
+click>=8.1,<9
+typer>=0.20.0,<0.21.0
+loguru>=0.7.3,<0.8.0
+tqdm>=4.67.1,<5.0.0
+tensorboard>=2.20.0,<3.0.0
