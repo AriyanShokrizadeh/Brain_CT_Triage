@@ -1,0 +1,11 @@
+cache:
+  backend: persistent
+  memory_cache_rate: 1
+  num_workers: 12
+
+dataloader:
+  batch_size: 4
+  num_workers: 8
+  pin_memory: true
+  persistent_workers: true
+  drop_last: true
