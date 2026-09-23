@@ -1,0 +1,15 @@
+minimum_ich_volume_ml: 0.1
+fracture_probability_threshold: 0.5
+
+urgent_mls_mm: 3.0
+emergency_mls_mm: 5.0
+
+edh_emergency_volume_ml: 30.0
+sdh_emergency_volume_ml: 70.0
+iph_emergency_volume_ml: 70.0
+total_emergency_volume_ml: 60.0
+
+combined_mls_mm: 3.0
+combined_ich_volume_ml: 40.0
+
+fracture_ich_volume_ml: 15.0
