@@ -1,0 +1,18 @@
+hemorrhage:
+  class_names:
+    - BG
+    - IntraventricularHemorrhage
+    - IntraparenchymalHemorrhage
+    - SubduralHemorrhage
+    - EpiduralHemorrhage
+    - SubarachnoidHemorrhage
+
+keypoints:
+  class_names:
+    - AnteriorFalxAttachment
+    - PosteriorFalxAttachment
+    - OutermostPointOfTheFalx
+  sigma: 4.0
+
+fracture:
+  class_index: 0
