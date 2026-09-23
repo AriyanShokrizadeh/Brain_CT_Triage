@@ -1,0 +1,67 @@
+primitives:
+  geometry:
+    flip:
+      spatial_axis: 1
+      prob: 0.5
+    rotate:
+      prob: 0.25
+      range_x: 0.08
+      mode: bilinear
+      padding_mode: border
+      keep_size: true
+
+  intensity:
+    smooth:
+      sigma_x: [0.1, 1.0]
+      sigma_y: [0.1, 1.0]
+      prob: 0.15
+    contrast:
+      prob: 0.25
+      gamma: [0.9, 1.1]
+    noise:
+      prob: 0.0
+      mean: 0.0
+      std: 0.1
+
+detection:
+  flip:
+    spatial_axis: 1
+    prob: 0.5
+  zoom:
+    prob: 0.5
+    min_zoom: 0.95
+    max_zoom: 1.05
+    mode: bilinear
+    padding_mode: constant
+    keep_size: true
+
+dino:
+  num_global_crops: 2
+  num_local_crops: 6
+  flip_prob: 0.5
+  rotate_range_x: 0.1
+  rotate_prob: 0.2
+  shift_offset: 0.1
+  shift_prob: 0.2
+  minimum_foreground_fraction: 0.1
+  foreground_channels: [0]
+  foreground_threshold: 0.1
+  maximum_crop_attempts: 10
+
+  global_crop:
+    size: 224
+    smooth_sigma: [0.1, 2.0]
+    smooth_prob: 0.5
+    contrast_gamma: [0.8, 1.2]
+    contrast_prob: 0.5
+    noise_std: 0.1
+    noise_prob: 0.2
+
+  local_crop:
+    size: 96
+    smooth_sigma: [0.1, 2.0]
+    smooth_prob: 0.6
+    contrast_gamma: [0.8, 1.2]
+    contrast_prob: 0.5
+    noise_std: 0.2
+    noise_prob: 0.4
