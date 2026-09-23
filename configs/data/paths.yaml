@@ -1,0 +1,27 @@
+data:
+  source: data/training_df.pkl
+
+  train:
+    dicoms: data/train/dicoms
+    annotations: data/train/annotations
+    annotated: data/train/annotated.csv
+    unannotated: data/train/unannotated.csv
+
+  predict:
+    dicoms: data/predict/dicoms
+    annotations: data/predict/annotations
+    annotated: data/predict/annotated.csv
+
+artifacts:
+  cache: artifacts/cache
+  figures: artifacts/figures
+  logs: artifacts/logs
+  checkpoints: artifacts/checkpoints
+  tensorboard: artifacts/tensorboard
+  weights: artifacts/weights
+
+experiments:
+  dino: dino
+  probe: probe
+  multitask: multitask
+  metadata: metadata
