@@ -1,0 +1,12 @@
+cnn:
+  architecture: resnext101_32x8d
+  input_channels: 3
+  pretrained: false
+
+transformer:
+  hidden_size: 1024
+  num_depths: 8
+  num_heads: 16
+  mlp_ratio: 4
+  dropout: 0.2
+  nominal_feature_size: 16
